@@ -1,0 +1,18 @@
+html, body { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+button { width: 100%; padding: 1em; background-color: #eee; transition: all 0.2s; }
+button:hover{background-color: #ccc;}
+
+/* popup */
+.popup_wrap { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 100; text-align: center; }
+.popup_box { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; max-width: 276px; border-radius: 10px; background-color: #fff; }
+.popup_box_cont { padding: 2em; }
+
+/* bottom popup */
+.btm_popup { position: fixed; bottom: -100%; left: 0; width: 100%; border-radius: 10px 10px 0 0; background-color: #fff; max-height: 600px; min-height: 137px; z-index: 50; }
+.btm_popup .com_guide { height: 100%; width: 92%; margin: 0 auto;}
+.btm_popup .tit_wrap { display: flex; justify-content: space-between; align-items: center; padding: 1.875em 0 0.5em; }
+.btm_popup .cont_wrap { height: calc(100% - 3.875em); }
+.btn_btm_popup_close { width: 100px; }
+
+.btm_popup_wrap { display: none; position: fixed; bottom: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); opacity: 0; z-index: 50; }
+.btm_popup_wrap .btm_popup { position: absolute; }

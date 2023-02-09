@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup alert</title>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/popup_alert.css">
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popup_alert.js"></script>
+</head>
+<body>
+    <!-- 팝업 중앙 스타일 -->
+    <button type="button" onclick="displayElement('alertPopup');"> alert popup button</button>
+    
+    <div id="alertPopup" class="popup_wrap" style="display: none;">
+        <div class="popup_box">
+            <div class="popup_box_cont">alert content</div>
+            <button type="button" class="btn_popup_close">OK</button>
+        </div>
+    </div>
+    <!-- 팝업 중앙 스타일 : end -->
+
+    <!-- 팝업 하단 슬라이드 -->
+    <button type="button" onclick="displayBtmPopup('btmPopup');">alert btm button</button>
+    <div id="btmPopup" class="btm_popup_wrap">
+        <div class="btm_popup">
+          <div class="com_guide">
+            <div class="tit_wrap">
+              <div class="tit">title</div>
+              <button type="button" class="btn_btm_popup_close">Close</button>
+            </div>
+            <div class="cont_wrap">
+                popup content
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- 팝업 하단 슬라이드 : end -->
+</body>
+</html>
